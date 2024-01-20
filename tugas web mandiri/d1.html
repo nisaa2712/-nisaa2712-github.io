@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: end game</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul style="z-index: 1000;">
+            <li><a href="home.html">HOME</a>&emsp;</li>
+            <li><a href="about_me.html">ABOUT ME</a>&emsp;</li>
+            <li><a href="galeri.html">GALERI</a>&emsp;</li>
+            <li><a href="hoby.html">HOBBY</a>&emsp;</li>
+            <li><a href="contact.html">CONTACT</a>&emsp;</li>
+        </ul>
+    </div>
+    <div class="content">
+        <img src="foto 1.jpeg" alt="">
+        <table>
+            <tr>
+                <td><h2>Judul</h2></td>
+                <td><h2> : </h2></td>
+                <td><h2>Ini foto saya</h2></td>
+            </tr>
+
+        </table>
+        <h3></h3>
+    </div>
+</body>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: black;
+ }
+ 
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover ::after {
+    width: 100%;
+}
+
+img{
+    width: 300px;
+    height:350px;
+    border-radius: 10px;
+    position: relative;
+    left: 60px;
+    top: 100px;
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content h2{
+    position: relative;
+    left: 390px;
+}
+
+table{
+    position: relative;
+    bottom: 200px;
+}
+
+h3{
+    position: relative;
+    top: 50px;
+}
+
+</style>
+
+</html>
